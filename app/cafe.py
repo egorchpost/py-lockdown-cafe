@@ -8,10 +8,10 @@ from app.errors import (
 
 
 class Cafe:
-    def __init__(self, name: object) -> None:
+    def __init__(self, name: str) -> None:
         self.name = name
 
-    def visit_cafe(self, visitor: object) -> str:
+    def visit_cafe(self, visitor: dict) -> str:
         if "vaccine" not in visitor:
             raise NotVaccinatedError(
                 f"{visitor['name']} is not vaccinated"
