@@ -1,9 +1,10 @@
+import datetime
+
 from app.cafe import Cafe
 from app.errors import (
     VaccineError,
     NotWearingMaskError,
 )
-import datetime
 
 
 def go_to_cafe(friends: list, cafe: Cafe) -> str:
